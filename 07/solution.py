@@ -1,5 +1,5 @@
 #
-# Day 07
+# Day 07 (part 1)
 # Solution 1: 248812215
 # Solution 2:
 #
@@ -48,13 +48,6 @@ def solve_1():
 	return solution
 
 
-
-def solve_2():
-	return 0
-
 first_solution = solve_1()
 print(first_solution)
 assert first_solution == 248812215
-
-second_solution = solve_2()
-print(second_solution)

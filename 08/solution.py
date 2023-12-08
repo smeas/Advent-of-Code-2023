@@ -7,9 +7,9 @@
 
 data = open("input.txt").read().splitlines()
 
-NODES = {}
 
 def solve_1():
+	nodes = {}
 	instructions = []
 	for chr in data[0]:
 		if chr == 'L':
@@ -20,15 +20,15 @@ def solve_1():
 	for line in data[2:]:
 		key = line[0:3]
 		value = (line[7:10], line[12:15])
-		NODES[key] = value
+		nodes[key] = value
 
-	current = NODES['AAA']
+	current = nodes['AAA']
 	steps = 0
 	while True:
 		for instr in instructions:
 			steps += 1
 			key = current[instr]
-			current = NODES[key]
+			current = nodes[key]
 			if key == 'ZZZ':
 				return steps
 

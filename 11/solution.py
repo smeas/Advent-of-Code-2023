@@ -1,6 +1,6 @@
 #
 # Day 11
-# Solution 1:
+# Solution 1: 9521550
 # Solution 2:
 #
 #

@@ -1,0 +1,62 @@
+start: AAA = ('SLH', 'CVN')
+Repeat! QKF = ('DSR', 'KGX') 1 24255 [(24253, 24253)] 24255
+start: QKF = ('DSR', 'KGX')
+Repeat! DSR = ('BST', 'MPD') 2 24254 [(24251, 48506)] 48509
+start: DSR = ('BST', 'MPD')
+Repeat! DSR = ('BST', 'MPD') 0 21488 [] 69997
+start: DSR = ('BST', 'MPD')
+Repeat! DSR = ('BST', 'MPD') 0 24253 [(2762, 72759)] 94250
+start: DSR = ('BST', 'MPD')
+Repeat! DSR = ('BST', 'MPD') 0 24253 [(2762, 97012)] 118503
+Done: 'DSR = ('BST', 'MPD')' i=0 count=24253 ends=[(2762, 97012)] totalCount=118503
+start: MGA = ('PLT', 'NCP')
+Repeat! DLC = ('RPP', 'TCF') 2 21800 [(21797, 21797)] 21800
+start: DLC = ('RPP', 'TCF')
+Repeat! DLC = ('RPP', 'TCF') 0 20874 [] 42674
+start: DLC = ('RPP', 'TCF')
+Repeat! DLC = ('RPP', 'TCF') 0 21797 [(920, 43594)] 64471
+start: DLC = ('RPP', 'TCF')
+Repeat! DLC = ('RPP', 'TCF') 0 21797 [(920, 65391)] 86268
+Done: 'DLC = ('RPP', 'TCF')' i=0 count=21797 ends=[(920, 65391)] totalCount=86268
+start: DGA = ('FTD', 'RGR')
+Repeat! PXX = ('HHG', 'TTQ') 1 14431 [(14429, 14429)] 14431
+start: PXX = ('HHG', 'TTQ')
+Repeat! HHG = ('DPL', 'KFC') 2 14430 [(14427, 28858)] 28861
+start: HHG = ('DPL', 'KFC')
+Repeat! HHG = ('DPL', 'KFC') 0 5217 [] 34078
+start: HHG = ('DPL', 'KFC')
+Repeat! HHG = ('DPL', 'KFC') 0 14429 [(9209, 43287)] 48507
+start: HHG = ('DPL', 'KFC')
+Repeat! HHG = ('DPL', 'KFC') 0 14429 [(9209, 57716)] 62936
+Done: 'HHG = ('DPL', 'KFC')' i=0 count=14429 ends=[(9209, 57716)] totalCount=62936
+start: TLA = ('QXP', 'MKM')
+Repeat! BDC = ('RPS', 'RBL') 1 16273 [(16271, 16271)] 16273
+start: BDC = ('RPS', 'RBL')
+Repeat! RPS = ('VNF', 'BXD') 2 16272 [(16269, 32542)] 32545
+start: RPS = ('VNF', 'BXD')
+Repeat! RPS = ('VNF', 'BXD') 0 14734 [] 47279
+start: RPS = ('VNF', 'BXD')
+Repeat! RPS = ('VNF', 'BXD') 0 16271 [(1534, 48813)] 63550
+start: RPS = ('VNF', 'BXD')
+Repeat! RPS = ('VNF', 'BXD') 0 16271 [(1534, 65084)] 79821
+Done: 'RPS = ('VNF', 'BXD')' i=0 count=16271 ends=[(1534, 65084)] totalCount=79821
+start: RDA = ('BVG', 'DJM')
+Repeat! RDJ = ('LFN', 'FVJ') 4 20574 [(20569, 20569)] 20574
+start: RDJ = ('LFN', 'FVJ')
+Repeat! RDJ = ('LFN', 'FVJ') 0 5829 [] 26403
+start: RDJ = ('LFN', 'FVJ')
+Repeat! RDJ = ('LFN', 'FVJ') 0 20569 [(14735, 41138)] 46972
+start: RDJ = ('LFN', 'FVJ')
+Repeat! RDJ = ('LFN', 'FVJ') 0 20569 [(14735, 61707)] 67541
+Done: 'RDJ = ('LFN', 'FVJ')' i=0 count=20569 ends=[(14735, 61707)] totalCount=67541
+start: DPA = ('MDS', 'SHG')
+Repeat! DMC = ('JBM', 'KNV') 1 13203 [(13201, 13201)] 13203
+start: DMC = ('JBM', 'KNV')
+Repeat! JBM = ('SVX', 'JBD') 2 13202 [(13199, 26402)] 26405
+start: JBM = ('SVX', 'JBD')
+Repeat! JBM = ('SVX', 'JBD') 0 8901 [] 35306
+start: JBM = ('SVX', 'JBD')
+Repeat! JBM = ('SVX', 'JBD') 0 13201 [(4297, 39603)] 48507
+start: JBM = ('SVX', 'JBD')
+Repeat! JBM = ('SVX', 'JBD') 0 13201 [(4297, 52804)] 61708
+Done: 'JBM = ('SVX', 'JBD')' i=0 count=13201 ends=[(4297, 52804)] totalCount=61708

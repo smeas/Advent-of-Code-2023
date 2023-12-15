@@ -1,6 +1,6 @@
 #
 # Day 12
-# Solution 1:
+# Solution 1: 7169
 # Solution 2:
 #
 #

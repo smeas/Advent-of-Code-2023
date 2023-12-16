@@ -1,7 +1,7 @@
 #
 # Day 16
 # Solution 1: 7210
-# Solution 2:
+# Solution 2: 7673
 #
 #
 
@@ -49,7 +49,9 @@ def is_in_bounds(pos):
 def add_vec(a, b):
 	return (a[0] + b[0], a[1] + b[1])
 
-def search(marked, pos, dir, loop_guard=set()):
+def search(pos, dir, marked=None, loop_guard=None):
+	marked = marked or set()
+	loop_guard = loop_guard or set()
 	while True:
 		if not is_in_bounds(pos):
 			break
@@ -70,7 +72,7 @@ def search(marked, pos, dir, loop_guard=set()):
 				# Split into second laser
 				split_dir = new_dirs[0]
 				split_pos = add_vec(pos, split_dir)
-				search(marked, split_pos, split_dir, loop_guard)
+				search(split_pos, split_dir, marked, loop_guard)
 
 				# Keep going in the other direction
 				dir = new_dirs[1]
@@ -78,15 +80,29 @@ def search(marked, pos, dir, loop_guard=set()):
 			else:
 				dir = new_dirs
 				pos = add_vec(pos, dir)
+	return len(marked)
 
 
 def solve_1():
-	marked = set()
-	pos = (0, 0)
-	dir = RIGHT
-	search(marked, pos, dir)
+	return search((0, 0), RIGHT)
 
-	#print(marked)
-	return len(marked)
+def solve_2():
+	max_marked = -1
+	for x in range(WIDTH):
+		num = search((x, 0), DOWN)
+		max_marked = max(max_marked, num)
+
+		num = search((x, HEIGHT - 1), UP)
+		max_marked = max(max_marked, num)
+
+	for y in range(HEIGHT):
+		num = search((0, y), RIGHT)
+		max_marked = max(max_marked, num)
+
+		num = search((WIDTH - 1, y), LEFT)
+		max_marked = max(max_marked, num)
+
+	return max_marked
 
 print(solve_1())
+print(solve_2())

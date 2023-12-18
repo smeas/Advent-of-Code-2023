@@ -53,7 +53,7 @@ def shift_nodes_positive(nodes):
 	for i, node in enumerate(nodes):
 		nodes[i] = add_vec(node, offset)
 
-	# return new bounds
+	# return size
 	return xmax + abs(xmin) + 1, ymax + abs(ymin) + 1
 
 def create_2d_array(w, h, fill):
@@ -84,6 +84,9 @@ def flood_fill(grid, start, fill):
 
 	print(count)
 
+# I could write an algorithm to find a point on the inside, oooor I could just
+# enter a known inside point by observing the output data. Might be a bit cheating
+# but I'm lazy. :P
 SEED = (40, 10)
 
 def solve_1():
